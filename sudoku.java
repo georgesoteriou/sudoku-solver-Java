@@ -53,8 +53,10 @@ public class sudoku {
       }
     }
     System.out.println();
-    System.out.println("Solution:");
+    System.out.print("Solution:");
+    long begin = System.currentTimeMillis();
     print(nextGrid(grid));
+    System.out.println("It took: " +(System.currentTimeMillis()-begin)+ "ms");
   }
 
   //print 2D array
